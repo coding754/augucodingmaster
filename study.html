@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augucoding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    margin: 0 1rem;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Area */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px; /* Adjust for navbar height */
+    padding: 1rem;
+}
+.column {
+    flex: 1;
+    padding: 1rem;
+}
+.column-left {
+    flex: 2;
+}
+.column-right {
+    flex: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.media-icons {
+    margin-top: 1rem;
+}
+.media-icons .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+    background-size: cover;
+}
+.icon.facebook { background-image: url('facebook-icon.png'); }
+.icon.twitter { background-image: url('twitter-icon.png'); }
+.icon.instagram { background-image: url('instagram-icon.png'); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+             <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <div class="column column-left">
+            <h1>Welcome to Augucoding</h1>
+            <p>What is HTML(Hypertext Markup Language)</p>
+            <p></p>
+            <img src="1.png" width="450px">
+             <img src="2.png" width="450px">
+              <img src="3.png" width="450px">
+        </div>
+        <div class="column column-right">
+             <img src="1.png" width="450px">
+             <img src="2.png" width="450px">
+              <img src="3.png" width="450px">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Augucoding</p>
+        <div class="media-icons">
+            <a href="https://facebook.com" class="icon facebook"></a>
+            <a href="https://twitter.com" class="icon twitter"></a>
+            <a href="https://instagram.com" class="icon instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        // scripts.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Example JavaScript for mobile menu toggle (if applicable)
+});
+
+    </script>
+</body>
+</html>

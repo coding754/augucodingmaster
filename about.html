@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Augucoding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    /* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
+
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Augucoding</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to Augucoding! We are passionate about coding and technology.</p>
+                <p>Our mission is to provide the best coding tutorials and resources for aspiring developers.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Augucoding. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    </script>
+</body>
+</html>

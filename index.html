@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augucoding Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    /* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background: #555;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.column-left, .column-right {
+    flex: 1;
+}
+
+.column-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Augucoding</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="main-content">
+            <div class="container">
+                <div class="column-left">
+                   <center> <h1>Welcome to Augucoding Website</h1></center>
+                    <center><img style="border-radius: 50%; border:5px solid orange;" src="v.jpg" width="130px" height="130px"></center>
+                    <hr>
+                    <p>Your gateway to coding excellence.</p>
+                    <p>
+
+<marquee><h1 style="color:blue; font-style: bold;">Welcome to Augucoding Website</h1></marquee><br>
+
+Are you ready to dive into the world of web development? At Augucoding, we’re passionate about helping you master the skills you need to create stunning, functional websites. Whether you're just starting out or looking to sharpen your existing skills, our comprehensive tutorials and resources will guide you every step of the way.<br>
+
+<h1 style="color:blue; font-style: bold;">Discover Our Learning Path</h1><br>
+
+<h1 style="color:orange;">HTML</h1><br> Build the backbone of your web pages with the fundamental building blocks of the web.<br>
+<h1 style="color:orange;">CSS</h1><br>Transform your websites with stylish, responsive designs that look great on any device.<br>
+<h1 style="color:orange;">JavaScript</h1><br>Add interactivity and dynamic features to your sites to enhance user experience.<br>
+<h1 style="color:orange;">PHP</h1> <br>Learn server-side programming to create powerful, data-driven applications.<br>
+
+Join our vibrant community of learners and developers, and start your journey toward becoming a proficient web developer today. With Augucoding, you're not just learning – you're building the future of the web!<br>
+
+<h1 style="color:orange;">Happy coding!</h1>
+
+</p>
+                </div>
+                <div class="column-right">
+                    <img src="c.jpg" width="100%" height="40%" alt="Coding Illustration">
+                   <center> <button style="width:75%; height: 80px; background: red;color:white; border-radius:20px;"><a style="color:white;text-decoration:none;font-size: 20px;" href="notes.html">START LEARNING</a></button></center>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Augucoding. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    </script>
+</body>
+</html>

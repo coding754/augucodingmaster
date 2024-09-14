@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Augucoding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    /* styles.css */
+
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 1rem;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
+
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Augucoding</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776; <!-- hamburger icon -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p style="text-align: left;">
+                     <center><img style="border-radius: 50%; border:5px solid orange;" src="v.jpg" width="130px" height="130px"></center>
+<h1 style="color:orange;">Welcome to Augucoding!</h1>
+
+<p style="text-align:left;">At Augucoding, we're passionate about coding and technology. Our goal is to empower individuals by providing high-quality resources, tutorials, and tools to help them excel in the world of programming.</p>
+
+<h1 style="text-align:left;">Our Mission</h1>
+
+<p style="text-align:left;">Our mission is to democratize coding education by offering accessible, comprehensive, and up-to-date resources. Whether you're a beginner taking your first steps in programming or an experienced developer looking to sharpen your skills, Augucoding is here to support your journey.</p>
+
+<h1 style="text-align:left;">What We Offer</h1>
+
+<p style="text-align:left;">Comprehensive Tutorials:<br>Our step-by-step guides cover a wide range of programming languages and technologies, from Python and JavaScript to web development frameworks like React and Angular.
+Hands-On Projects:<br> Learn by doing with practical projects that reinforce your skills and build your portfolio.
+Expert Insights:<br> Stay updated with articles, tips, and best practices from industry experts.
+- **Community Support:<br> Join our vibrant community of learners and professionals. Share knowledge, seek advice, and collaborate on projects.</p>
+
+<h1 style="text-align:left;">Our Values</h1>
+
+<p style="text-align:left;">Accessibility<br> We believe that learning to code should be accessible to everyone, regardless of background or financial situation.<br>
+Quality<br> We are committed to delivering high-quality, accurate, and up-to-date content.<br>
+Inclusivity<br> Our community embraces diversity and encourages learners from all walks of life to join us.<br></p>
+
+<h1 style="text-align:left;">Join Us</h1>
+
+<p style="text-align:left;">Whether you're here to start a new career in tech or to enhance your existing skills, Augucoding is your partner in achieving your goals. Explore our resources, engage with our community, and take your coding journey to the next level.
+
+Thank you for being a part of Augucoding. Together, let's shape the future of technology.</p>
+
+</p>
+                
+                 <img src="c.jpg" width="100%" height="40%" alt="Coding Illustration">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Augucoding. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#" class="social-icon"><img src="f.jpeg" alt="Facebook"></a>
+                <a href="htts://whatsapp.com/dl/" class="social-icon"><img src="w.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="i.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    </script>
+</body>
+</html>
